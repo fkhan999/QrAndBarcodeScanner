@@ -43,8 +43,26 @@ android {
         jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 
+    signingConfigs {
+        release {
+            def propsFile = rootProject.file('keystore.properties')
+            if (propsFile.exists()) {
+                def props = new Properties()
+                propsFile.withInputStream { props.load(it) }
+                keyAlias      props['keyAlias']
+                keyPassword   props['keyPassword']
+                storeFile     file(props['storeFile'])
+                storePassword props['storePassword']
+            }
+        }
+    }
+
     buildTypes {
         release {
+            def propsFile = rootProject.file('keystore.properties')
+            if (propsFile.exists()) {
+                signingConfig signingConfigs.release
+            }
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
