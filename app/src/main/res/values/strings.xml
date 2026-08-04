@@ -308,7 +308,6 @@
     <string name="activity_barcode_open_bitcoin_url">Open in other app</string>
     <string name="activity_barcode_show_otp">Show password</string>
     <string name="activity_barcode_open_otp">Open in other app</string>
-    <string name="activity_barcode_open_upi">Pay via UPI</string>
     <string name="activity_barcode_copy_upi_id">Copy UPI ID</string>
     <string name="activity_barcode_share_as_text">Share as text</string>
     <string name="activity_barcode_copy">Copy to clipboard</string>
