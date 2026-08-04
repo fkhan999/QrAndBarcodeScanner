@@ -3,6 +3,7 @@ package com.example.qrscanner.feature.tabs.history.export
 import android.Manifest
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Toast
@@ -83,7 +84,14 @@ class ExportHistoryActivity : BaseActivity() {
 
     private fun initExportButton() {
         button_export.setOnClickListener {
-            requestPermissions()
+            // On Android 10+ the export writes via MediaStore and needs no
+            // storage permission; WRITE_EXTERNAL_STORAGE is auto-denied there
+            // (no dialog), which used to block the export silently.
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+                exportHistory()
+            } else {
+                requestPermissions()
+            }
         }
     }
 
