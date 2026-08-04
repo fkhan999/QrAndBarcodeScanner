@@ -26,7 +26,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
-            <com.example.barcodescanner.feature.common.view.SettingsRadioButton
+            <com.example.qrscanner.feature.common.view.SettingsRadioButton
                 android:id="@+id/button_system_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -35,7 +35,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:text="@string/activity_choose_theme_system"
                 />
-            <com.example.barcodescanner.feature.common.view.SettingsRadioButton
+            <com.example.qrscanner.feature.common.view.SettingsRadioButton
                 android:id="@+id/button_light_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:text="@string/activity_choose_theme_light"
                 />
-            <com.example.barcodescanner.feature.common.view.SettingsRadioButton
+            <com.example.qrscanner.feature.common.view.SettingsRadioButton
                 android:id="@+id/button_dark_theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -16,7 +16,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.barcodescanner"
+        applicationId "com.example.qrscanner"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 12
@@ -72,9 +72,7 @@ android {
     flavorDimensions "market"
     productFlavors {
         appGallery {}
-        googlePlay {
-            applicationId "org.barcodescanner"
-        }
+        googlePlay {}
         fDroid {
             buildConfigField "boolean", "ERROR_REPORTS_ENABLED_BY_DEFAULT", "false"
         }

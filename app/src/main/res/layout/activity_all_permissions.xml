@@ -37,7 +37,7 @@
                 android:text="@string/activity_all_permissions_normal_permissions"
                 style="@style/SettingsGroupTitleTextViewStyle"
                 />
-            <com.example.barcodescanner.feature.common.view.SettingsButton
+            <com.example.qrscanner.feature.common.view.SettingsButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:text="@string/activity_all_permissions_vibrate_title"
@@ -45,7 +45,7 @@
                 app:isDelimiterVisible="true"
                 app:isSwitchVisible="false"
                 />
-            <com.example.barcodescanner.feature.common.view.SettingsButton
+            <com.example.qrscanner.feature.common.view.SettingsButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:text="@string/activity_all_permissions_wifi_title"
@@ -53,7 +53,7 @@
                 app:isDelimiterVisible="true"
                 app:isSwitchVisible="false"
                 />
-            <com.example.barcodescanner.feature.common.view.SettingsButton
+            <com.example.qrscanner.feature.common.view.SettingsButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:text="@string/activity_all_permissions_internet_title"
@@ -72,7 +72,7 @@
                 android:text="@string/activity_all_permissions_runtime_permissions"
                 style="@style/SettingsGroupTitleTextViewStyle"
                 />
-            <com.example.barcodescanner.feature.common.view.SettingsButton
+            <com.example.qrscanner.feature.common.view.SettingsButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:text="@string/activity_all_permissions_camera_title"
@@ -80,7 +80,7 @@
                 app:isDelimiterVisible="true"
                 app:isSwitchVisible="false"
                 />
-            <com.example.barcodescanner.feature.common.view.SettingsButton
+            <com.example.qrscanner.feature.common.view.SettingsButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:text="@string/activity_all_permissions_read_contacts_title"
@@ -88,7 +88,7 @@
                 app:isDelimiterVisible="true"
                 app:isSwitchVisible="false"
                 />
-            <com.example.barcodescanner.feature.common.view.SettingsButton
+            <com.example.qrscanner.feature.common.view.SettingsButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:text="@string/activity_all_permissions_storage_title"

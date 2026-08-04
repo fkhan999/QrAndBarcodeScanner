@@ -8,9 +8,9 @@
         android:shortcutLongLabel="@string/shortcut_scan_from_camera"
         >
         <intent
-            android:action="org.barcodescanner.SCAN_FROM_CAMERA"
-            android:targetPackage="org.barcodescanner"
-            android:targetClass="com.example.barcodescanner.feature.tabs.BottomTabsActivity"
+            android:action="com.example.qrscanner.SCAN_FROM_CAMERA"
+            android:targetPackage="com.example.qrscanner"
+            android:targetClass="com.example.qrscanner.feature.tabs.BottomTabsActivity"
             />
     </shortcut>
 
@@ -22,9 +22,9 @@
         android:shortcutLongLabel="@string/shortcut_scan_from_file"
         >
         <intent
-            android:action="org.barcodescanner.SCAN_FROM_FILE"
-            android:targetPackage="org.barcodescanner"
-            android:targetClass="com.example.barcodescanner.feature.tabs.scan.file.ScanBarcodeFromFileActivity"
+            android:action="com.example.qrscanner.SCAN_FROM_FILE"
+            android:targetPackage="com.example.qrscanner"
+            android:targetClass="com.example.qrscanner.feature.tabs.scan.file.ScanBarcodeFromFileActivity"
             />
     </shortcut>
 
@@ -36,9 +36,9 @@
         android:shortcutLongLabel="@string/shortcut_create_barcode"
         >
         <intent
-            android:action="org.barcodescanner.CREATE_BARCODE"
-            android:targetPackage="org.barcodescanner"
-            android:targetClass="com.example.barcodescanner.feature.tabs.BottomTabsActivity"
+            android:action="com.example.qrscanner.CREATE_BARCODE"
+            android:targetPackage="com.example.qrscanner"
+            android:targetClass="com.example.qrscanner.feature.tabs.BottomTabsActivity"
             />
     </shortcut>
 
@@ -50,9 +50,9 @@
         android:shortcutLongLabel="@string/shortcut_history"
         >
         <intent
-            android:action="org.barcodescanner.HISTORY"
-            android:targetPackage="org.barcodescanner"
-            android:targetClass="com.example.barcodescanner.feature.tabs.BottomTabsActivity"
+            android:action="com.example.qrscanner.HISTORY"
+            android:targetPackage="com.example.qrscanner"
+            android:targetClass="com.example.qrscanner.feature.tabs.BottomTabsActivity"
             />
     </shortcut>
 

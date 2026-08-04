@@ -18,7 +18,7 @@
         style="@style/ToolbarWithBackButtonStyle"
         />
     
-    <com.example.barcodescanner.feature.tabs.scan.file.MyCropImageView
+    <com.example.qrscanner.feature.tabs.scan.file.MyCropImageView
         android:id="@+id/crop_image_view"
         android:layout_width="0dp"
         android:layout_height="0dp"

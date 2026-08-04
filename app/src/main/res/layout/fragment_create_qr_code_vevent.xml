@@ -74,7 +74,7 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.example.barcodescanner.feature.common.view.DateTimePickerButton
+    <com.example.qrscanner.feature.common.view.DateTimePickerButton
         android:id="@+id/button_date_time_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
         app:hint="@string/fragment_create_qr_code_event_start_date_hint"
         />
 
-    <com.example.barcodescanner.feature.common.view.DateTimePickerButton
+    <com.example.qrscanner.feature.common.view.DateTimePickerButton
         android:id="@+id/button_date_time_end"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
