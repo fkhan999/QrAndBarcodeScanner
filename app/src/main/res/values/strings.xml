@@ -184,6 +184,7 @@
         <item>Favorites</item>
     </string-array>
     <string name="fragment_barcode_history_menu_title_export">Export history</string>
+    <string name="fragment_barcode_history_menu_title_import">Import history</string>
     <string name="fragment_barcode_history_menu_title_delete_all">Clear history</string>
 
     <!--Export history activity-->
@@ -197,6 +198,12 @@
     <string name="activity_export_history_file_name_default" translatable="false">db</string>
     <string name="activity_export_history_export">Export</string>
     <string name="activity_export_history_exported">Saved to Downloads</string>
+
+    <!--Import history activity-->
+    <string name="activity_import_history_title">Import history</string>
+    <string name="activity_import_history_hint">Choose a CSV or JSON file previously exported from this app. Existing codes are skipped.</string>
+    <string name="activity_import_history_choose_file">Choose file</string>
+    <string name="activity_import_history_imported">Imported %1$d codes</string>
 
     <!--Settings fragment-->
     <string name="fragment_settings_title">Settings</string>

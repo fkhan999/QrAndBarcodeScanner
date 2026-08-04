@@ -11,6 +11,7 @@ import com.example.qrscanner.extension.applySystemWindowInsets
 import com.example.qrscanner.extension.showError
 import com.example.qrscanner.feature.common.dialog.DeleteConfirmationDialogFragment
 import com.example.qrscanner.feature.tabs.history.export.ExportHistoryActivity
+import com.example.qrscanner.feature.tabs.history.export.ImportHistoryActivity
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
@@ -54,6 +55,7 @@ class BarcodeHistoryFragment : Fragment(), DeleteConfirmationDialogFragment.List
         toolbar.setOnMenuItemClickListener { item ->
             when (item.itemId) {
                 R.id.item_export_history -> navigateToExportHistoryScreen()
+                R.id.item_import_history -> navigateToImportHistoryScreen()
                 R.id.item_clear_history -> showDeleteHistoryConfirmationDialog()
             }
             return@setOnMenuItemClickListener true
@@ -62,6 +64,10 @@ class BarcodeHistoryFragment : Fragment(), DeleteConfirmationDialogFragment.List
 
     private fun navigateToExportHistoryScreen() {
         ExportHistoryActivity.start(requireActivity())
+    }
+
+    private fun navigateToImportHistoryScreen() {
+        ImportHistoryActivity.start(requireActivity())
     }
 
     private fun showDeleteHistoryConfirmationDialog() {

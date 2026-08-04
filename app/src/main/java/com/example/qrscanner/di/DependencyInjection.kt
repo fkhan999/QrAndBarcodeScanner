@@ -22,6 +22,9 @@ val AppCompatActivity.barcodeImageGenerator
 val AppCompatActivity.barcodeSaver
     get() = BarcodeSaver
 
+val AppCompatActivity.barcodeImporter
+    get() = BarcodeImporter
+
 val AppCompatActivity.barcodeImageSaver
     get() = BarcodeImageSaver
 

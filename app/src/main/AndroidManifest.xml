@@ -169,6 +169,12 @@
             android:configChanges="orientation|screenSize"
             android:exported="false"
             />
+        <activity
+            android:name=".feature.tabs.history.export.ImportHistoryActivity"
+            android:screenOrientation="fullSensor"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            />
 
         <activity
             android:name=".feature.tabs.settings.theme.ChooseThemeActivity"
