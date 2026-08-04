@@ -10,7 +10,7 @@ gen/
 out/
 *.apk
 *.aab
-
+colab.ipynb
 # Gradle files
 .gradle
 gradle/wrapper/gradle.wrapper.jar
