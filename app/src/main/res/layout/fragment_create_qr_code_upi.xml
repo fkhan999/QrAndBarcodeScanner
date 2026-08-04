@@ -7,10 +7,28 @@
     android:orientation="vertical"
     >
 
-    <com.google.android.material.textfield.TextInputLayout
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:layout_marginHorizontal="@dimen/default_margin_big"
+        android:text="@string/fragment_create_qr_code_upi_address_type_hint"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="@dimen/default_text_size_extra_small"
+        />
+    <Spinner
+        android:id="@+id/spinner_address_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/default_margin_small"
+        android:layout_marginHorizontal="@dimen/default_margin_medium"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_upi_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_medium"
         android:layout_marginHorizontal="@dimen/default_margin"
         style="@style/TextInputLayoutStyle"
         >
@@ -28,6 +46,76 @@
             style="@style/EditTextStyle"
             />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_account_ifsc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_account_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/default_margin_medium"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/default_margin_small"
+            style="@style/TextInputLayoutStyle"
+            >
+            <EditText
+                android:id="@+id/edit_text_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:lines="1"
+                android:maxLines="1"
+                android:hint="@string/fragment_create_qr_code_upi_account_number_hint"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:backgroundTint="@color/blue"
+                style="@style/EditTextStyle"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_input_layout_ifsc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/default_margin_medium"
+            android:layout_marginStart="@dimen/default_margin_small"
+            android:layout_marginEnd="@dimen/default_margin"
+            style="@style/TextInputLayoutStyle"
+            >
+            <EditText
+                android:id="@+id/edit_text_ifsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|top"
+                android:lines="1"
+                android:maxLines="1"
+                android:hint="@string/fragment_create_qr_code_upi_ifsc_hint"
+                android:inputType="textCapCharacters"
+                android:imeOptions="actionNext"
+                android:backgroundTint="@color/blue"
+                style="@style/EditTextStyle"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_view_vpa_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin_small"
+        android:layout_marginHorizontal="@dimen/default_margin_big"
+        android:textColor="@color/edit_text_hint_color"
+        android:textSize="@dimen/default_text_size_extra_small"
+        android:visibility="gone"
+        />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"

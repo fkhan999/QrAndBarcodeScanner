@@ -142,7 +142,15 @@
     <string name="fragment_create_qr_code_otp_generate_random_secret">Random Secret</string>
 
     <!--Create QR code UPI-->
+    <string name="fragment_create_qr_code_upi_address_type_hint">Payment address type</string>
+    <string-array name="fragment_create_qr_code_upi_address_types">
+        <item>UPI ID</item>
+        <item>Bank account (Account + IFSC)</item>
+    </string-array>
     <string name="fragment_create_qr_code_upi_id_hint">UPI ID (e.g. name@bank)</string>
+    <string name="fragment_create_qr_code_upi_account_number_hint">Account number</string>
+    <string name="fragment_create_qr_code_upi_ifsc_hint">IFSC code</string>
+    <string name="fragment_create_qr_code_upi_vpa_preview">QR will use: %s</string>
     <string name="fragment_create_qr_code_upi_payee_hint">Payee name (optional)</string>
     <string name="fragment_create_qr_code_upi_amount_hint">Amount (optional)</string>
     <string name="fragment_create_qr_code_upi_currency_hint">Currency</string>
