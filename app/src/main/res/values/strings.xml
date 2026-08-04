@@ -308,6 +308,8 @@
     <string name="activity_barcode_open_bitcoin_url">Open in other app</string>
     <string name="activity_barcode_show_otp">Show password</string>
     <string name="activity_barcode_open_otp">Open in other app</string>
+    <string name="activity_barcode_open_upi">Pay via UPI</string>
+    <string name="activity_barcode_copy_upi_id">Copy UPI ID</string>
     <string name="activity_barcode_share_as_text">Share as text</string>
     <string name="activity_barcode_copy">Copy to clipboard</string>
     <string name="activity_barcode_save_as_text">Save as text</string>
@@ -372,6 +374,7 @@
     <string name="barcode_schema_wifi">Wi-Fi</string>
     <string name="barcode_schema_youtube">Youtube URL</string>
     <string name="barcode_schema_boardingpass">Boarding Pass</string>
+    <string name="barcode_schema_upi">UPI Payment</string>
     <string name="barcode_schema_other">Text</string>
 
     <!--Barcode formats-->

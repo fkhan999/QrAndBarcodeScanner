@@ -56,6 +56,12 @@ class ParsedBarcode(barcode: Barcode) {
     var otpUrl: String? = null
     var geoUri: String? = null
 
+    var upiPayee: String? = null
+    var upiVpa: String? = null
+    var upiAmount: String? = null
+    var upiCurrency: String? = null
+    var upiNote: String? = null
+
     var eventUid: String? = null
     var eventStamp: String? = null
     var eventOrganizer: String? = null
@@ -94,6 +100,7 @@ class ParsedBarcode(barcode: Barcode) {
             BarcodeSchema.YOUTUBE -> parseYoutube()
             BarcodeSchema.CRYPTOCURRENCY -> parseBitcoin()
             BarcodeSchema.OTP_AUTH -> parseOtp()
+            BarcodeSchema.UPI -> parseUpi()
             BarcodeSchema.NZCOVIDTRACER -> parseNZCovidTracer()
             BarcodeSchema.BOARDINGPASS,
             BarcodeSchema.URL -> parseUrl()
@@ -202,6 +209,15 @@ class ParsedBarcode(barcode: Barcode) {
 
     private fun parseOtp() {
         otpUrl = text
+    }
+
+    private fun parseUpi() {
+        val upi = Upi.parse(text) ?: return
+        upiPayee = upi.payeeName
+        upiVpa = upi.payeeVpa
+        upiAmount = upi.amount
+        upiCurrency = upi.currency
+        upiNote = upi.note
     }
 
     private fun parseUrl() {

@@ -348,6 +348,26 @@
                 tools:visibility="visible"
                 />
             <com.example.qrscanner.feature.common.view.IconButton
+                android:id="@+id/button_open_upi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_upi"
+                app:iconBackground="@color/orange"
+                app:text="@string/activity_barcode_open_upi"
+                android:visibility="gone"
+                tools:visibility="visible"
+                />
+            <com.example.qrscanner.feature.common.view.IconButton
+                android:id="@+id/button_copy_upi_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_copy"
+                app:iconBackground="@color/orange"
+                app:text="@string/activity_barcode_copy_upi_id"
+                android:visibility="gone"
+                tools:visibility="visible"
+                />
+            <com.example.qrscanner.feature.common.view.IconButton
                 android:id="@+id/button_open_link"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

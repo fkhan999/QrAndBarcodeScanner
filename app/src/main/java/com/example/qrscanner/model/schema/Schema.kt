@@ -19,6 +19,7 @@ enum class BarcodeSchema {
     YOUTUBE,
     NZCOVIDTRACER,
     BOARDINGPASS,
+    UPI,
     OTHER;
 }
 

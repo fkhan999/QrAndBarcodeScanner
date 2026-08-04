@@ -30,6 +30,7 @@ object BarcodeParser {
         return App.parse(text)
             ?: Youtube.parse(text)
             ?: GoogleMaps.parse(text)
+            ?: Upi.parse(text)
             ?: Url.parse(text)
             ?: Phone.parse(text)
             ?: Geo.parse(text)

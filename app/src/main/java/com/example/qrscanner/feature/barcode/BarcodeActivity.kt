@@ -199,6 +199,8 @@ class BarcodeActivity : BaseActivity(), DeleteConfirmationDialogFragment.Listene
         button_show_otp.setOnClickListener { showOtp() }
         button_open_otp.setOnClickListener { openOtpInOtherApp() }
         button_open_bitcoin_uri.setOnClickListener { openBitcoinUrl() }
+        button_open_upi.setOnClickListener { openUpiApp() }
+        button_copy_upi_id.setOnClickListener { copyUpiId() }
         button_open_link.setOnClickListener { openLink() }
         button_save_bookmark.setOnClickListener { saveBookmark() }
 
@@ -447,6 +449,15 @@ class BarcodeActivity : BaseActivity(), DeleteConfirmationDialogFragment.Listene
         startActivityIfExists(Intent.ACTION_VIEW, barcode.url.orEmpty())
     }
 
+    private fun openUpiApp() {
+        startActivityIfExists(Intent.ACTION_VIEW, barcode.text)
+    }
+
+    private fun copyUpiId() {
+        copyToClipboard(barcode.upiVpa.orEmpty())
+        showToast(R.string.activity_barcode_copied)
+    }
+
     private fun saveBookmark() {
         val intent = Intent(Intent.ACTION_INSERT, Uri.parse("content://browser/bookmarks")).apply {
             putExtra("title", barcode.bookmarkTitle.orEmpty())
@@ -692,6 +703,8 @@ class BarcodeActivity : BaseActivity(), DeleteConfirmationDialogFragment.Listene
         button_show_otp.isVisible = barcode.otpUrl.isNullOrEmpty().not()
         button_open_otp.isVisible = barcode.otpUrl.isNullOrEmpty().not()
         button_open_bitcoin_uri.isVisible = barcode.bitcoinUri.isNullOrEmpty().not()
+        button_open_upi.isVisible = barcode.schema == BarcodeSchema.UPI && barcode.upiVpa.isNullOrEmpty().not()
+        button_copy_upi_id.isVisible = barcode.schema == BarcodeSchema.UPI && barcode.upiVpa.isNullOrEmpty().not()
         button_open_link.isVisible = barcode.url.isNullOrEmpty().not()
         button_save_bookmark.isVisible = barcode.schema == BarcodeSchema.BOOKMARK
     }
