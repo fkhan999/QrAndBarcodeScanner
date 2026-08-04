@@ -141,6 +141,14 @@
     <string name="fragment_create_qr_code_otp_secret_hint">Secret</string>
     <string name="fragment_create_qr_code_otp_generate_random_secret">Random Secret</string>
 
+    <!--Create QR code UPI-->
+    <string name="fragment_create_qr_code_upi_id_hint">UPI ID (e.g. name@bank)</string>
+    <string name="fragment_create_qr_code_upi_payee_hint">Payee name (optional)</string>
+    <string name="fragment_create_qr_code_upi_amount_hint">Amount (optional)</string>
+    <string name="fragment_create_qr_code_upi_currency_hint">Currency</string>
+    <string name="fragment_create_qr_code_upi_currency_default" translatable="false">INR</string>
+    <string name="fragment_create_qr_code_upi_note_hint">Transaction note (optional)</string>
+
     <!--Create QR code event-->
     <string name="fragment_create_qr_code_event_title_hint">Title</string>
     <string name="fragment_create_qr_code_event_organizer_hint">Organizer</string>

@@ -241,6 +241,7 @@ class CreateBarcodeActivity : BaseActivity(), AppAdapter.Listener {
             barcodeFormat == BarcodeFormat.QR_CODE && barcodeSchema == BarcodeSchema.VEVENT -> CreateQrCodeEventFragment()
             barcodeFormat == BarcodeFormat.QR_CODE && barcodeSchema == BarcodeSchema.VCARD -> CreateQrCodeVCardFragment()
             barcodeFormat == BarcodeFormat.QR_CODE && barcodeSchema == BarcodeSchema.MECARD -> CreateQrCodeMeCardFragment()
+            barcodeFormat == BarcodeFormat.QR_CODE && barcodeSchema == BarcodeSchema.UPI -> CreateQrCodeUpiFragment()
             barcodeFormat == BarcodeFormat.DATA_MATRIX -> CreateDataMatrixFragment()
             barcodeFormat == BarcodeFormat.AZTEC -> CreateAztecFragment()
             barcodeFormat == BarcodeFormat.PDF_417 -> CreatePdf417Fragment()

@@ -88,6 +88,14 @@
                 app:text="@string/barcode_schema_v_card"
                 />
             <com.example.qrscanner.feature.common.view.IconButtonWithDelimiter
+                android:id="@+id/button_upi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_upi"
+                app:iconBackground="@color/blue3"
+                app:text="@string/barcode_schema_upi"
+                />
+            <com.example.qrscanner.feature.common.view.IconButtonWithDelimiter
                 android:id="@+id/button_show_all_qr_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
